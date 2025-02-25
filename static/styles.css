@@ -1,0 +1,145 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px; /* Increased space between table and other content */
+}
+
+th {
+    padding: 20px 15px; /* Increased padding around table headings for more space */
+    text-align: left;
+    background-color: #4caf50;
+    color: white;
+    font-size: 18px;
+    border-bottom: 2px solid #ddd; /* Border under each heading */
+}
+
+td {
+    padding: 15px 10px; /* Padding for table cells */
+    border-bottom: 1px solid #ddd; /* Light border between rows */
+    font-size: 16px;
+}
+
+/* Optional: Add spacing to the first column header */
+th:first-child {
+    padding-left: 30px; /* Extra space for the first column heading */
+}
+
+/* Optional: Add spacing to the last column header */
+th:last-child {
+    padding-right: 30px; /* Extra space for the last column heading */
+}
+
+
+/* Container Styling */
+.container {
+    width: 100%;
+    max-width: 1000px;
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin: 20px;
+}
+
+/* Heading */
+h1 {
+    margin-bottom: 50px;
+    font-size: 36px;
+    color: #333333;
+    text-align: center;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 40px; /* Increased margin */
+}
+
+/* Label Styling */
+label {
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 12px;
+    display: block;
+}
+
+/* Input, Select, and Textarea Styling */
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 18px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #333333;
+    background-color: #f9f9f9;
+    margin-top: 12px; /* Added extra margin for spacing */
+}
+
+/* Focus Styling */
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #4caf50;
+    outline: none;
+}
+
+/* Button Styling */
+button {
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 30px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 30px; /* Reduced padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 30px; /* Slightly smaller heading for smaller screens */
+    }
+
+    button {
+        font-size: 18px; /* Smaller button text */
+    }
+}
